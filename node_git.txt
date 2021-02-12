@@ -1,0 +1,21 @@
+update git in ubuntu (zsh)
+====================
+git --version
+sudo add-apt-repository ppa:git-core/ppa -y
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install git -y
+
+
+node js install
+===============
+https://github.com/nodesource/distributions/blob/master/README.md
+
+node js version (NVM)
+===============
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+source ~/.nvm/nvm.sh
+nvm list-remote
+nvm install v14.....
+nvm list
+nvm use v14....
