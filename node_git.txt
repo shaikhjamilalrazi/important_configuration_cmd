@@ -1,3 +1,29 @@
+Turn Windows Features on or off
+select Virtual Machine Platorm and windows subsystem for linux 
+
+Go to Microsoft store and download Ubuntu-20.04
+
+Update wsl2
+===========
+https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package
+
+PowerShell
+==========
+wsl --set-version Ubuntu-20.04 2
+
+wsl -l -v
+
+wsl --set-default-version 2
+
+install zsh
+============
+sudo apt install zsh
+
+chsh -s $(which zsh)
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
 update git in ubuntu (zsh)
 ====================
 git --version
@@ -9,7 +35,10 @@ sudo apt-get install git -y
 
 node js install
 ===============
-https://github.com/nodesource/distributions/blob/master/README.md
+https://github.com/nodesource/distributions/blob/master/README.md (check the version you need)
+
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
 node js version (NVM)
 ===============
